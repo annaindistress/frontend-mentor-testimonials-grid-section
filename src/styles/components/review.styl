@@ -1,0 +1,86 @@
+.review
+    display grid
+    grid-template-columns 32px 1fr
+    gap 16px
+    align-items center
+    width 100%
+    max-width 540px
+    margin 0 auto
+    padding 32px
+    padding-top 26px
+    border-radius 8px
+    box-shadow 40px 60px 50px -47px rgba(72, 85, 106, .247378)
+
+    &--primary
+        color color-secondary-white
+        background-color color-primary-dark
+
+    &--light
+        background-color color-secondary-white
+
+    &--medium
+        color color-secondary-white
+        background-color color-secondary-grey-dark
+
+    &--dark
+        color color-secondary-white
+        background-color color-secondary-black
+
+    &__avatar
+        width 32px
+        height 32px
+        border 2px solid transparent
+        border-radius 50%
+
+        .review--primary &
+            border-color color-primary-light
+
+        .review--dark &
+            border-color color-primary-dark
+
+    &__author
+        margin 0
+        line-height 1
+
+    &__author-title
+        display block
+        margin-top 4px
+        font-size 11px
+        opacity .5
+
+    &__lead
+        grid-column 1 / -1
+        margin 0
+        margin-top 2px
+        font-weight 600
+        font-size 20px
+        line-height 1.2
+
+        .review--primary &
+            margin-bottom 24px
+
+        .review--dark &
+            color color-grey-blue
+
+    &__content
+        grid-column 1 / -1
+        margin 0
+        margin-right 15px
+        opacity .7
+
+        &::before
+            content "“ "
+
+        &::after
+            content " ”"
+
+        .review--primary &
+            color color-secondary-grey-light
+
+@media (min-width: 1200px)
+    .review
+        height 100%
+
+        &__lead
+            .review--primary &
+                margin-bottom 0
