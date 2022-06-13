@@ -22,11 +22,22 @@ Users should be able to:
 
 ### Screenshot
 
+![](./screenshot.png)
+
 ### Links
+
+- [Solution URL](https://github.com/annaindistress/frontend-mentor-testimonials-grid-section)
+- [Live Site URL](https://annaindistress.github.io/frontend-mentor-testimonials-grid-section/)
 
 ## My process
 
 ### Built with
+
+- Semantic HTML5 markup
+- CSS Grid
+- Mobile-first workflow
+- Gulp
+- Stylus
 
 ## Author
 
