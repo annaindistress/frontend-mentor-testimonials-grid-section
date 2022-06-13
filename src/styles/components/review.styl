@@ -14,6 +14,10 @@
     &--primary
         color color-secondary-white
         background-color color-primary-dark
+        background-image url('../images/bg-pattern-quotation.svg')
+        background-repeat no-repeat
+        background-position calc(100% - 24px) top
+        background-size 104px 102px
 
     &--light
         background-color color-secondary-white
@@ -69,10 +73,10 @@
         opacity .7
 
         &::before
-            content "“ "
+            content '“ '
 
         &::after
-            content " ”"
+            content ' ”'
 
         .review--primary &
             color color-secondary-grey-light
@@ -80,6 +84,9 @@
 @media (min-width: 1200px)
     .review
         height 100%
+
+        &--primary
+            background-position-x calc(100% - 80px)
 
         &__lead
             .review--primary &
